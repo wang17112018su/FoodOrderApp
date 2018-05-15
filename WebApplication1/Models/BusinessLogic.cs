@@ -14,7 +14,7 @@ namespace Food
     {
         public static void AddOrder(string user,string foodname,string size,string pepper,string chilli, string ketchup, string tartar)
         {
-            FoodOrders entities = new FoodOrders();
+            FoodOrders2 entities = new FoodOrders2();
             FoodListTable order = new FoodListTable();
             order.UserName = user;
             order.Food = foodname;

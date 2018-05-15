@@ -76,14 +76,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FoodOrder.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FoodOrder.aspx.cs">
+      <DependentUpon>FoodOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FoodOrder.aspx.designer.cs">
+      <DependentUpon>FoodOrder.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\FoodOrder.cs" />
+    <Compile Include="Models\BusinessLogic.cs" />
+    <Compile Include="Models\Food.cs" />
+    <Compile Include="Models\FoodListTable.cs" />
+    <Compile Include="Models\FoodOrders2.cs" />
+    <Compile Include="Models\Size.cs" />
+    <Compile Include="Models\YesNo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
