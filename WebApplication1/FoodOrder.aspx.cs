@@ -12,6 +12,14 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            RadioButtonList1.DataSource = BusinessLogic.ListSize();
+            RadioButtonList1.DataTextField = "Description";
+            RadioButtonList1.DataValueField = "ID";
+            RadioButtonList1.DataBind();
+            DropDownList1.DataSource = BusinessLogic.ListFood();
+            DropDownList1.DataTextField = "Name";
+            DropDownList1.DataValueField = "ID";
+            DropDownList1.DataBind();
 
         }
         
@@ -21,6 +29,9 @@ namespace WebApplication1
             
         }
 
-     
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

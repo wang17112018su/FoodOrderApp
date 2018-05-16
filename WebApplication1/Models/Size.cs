@@ -1,4 +1,4 @@
-namespace WebApplication1.Models
+namespace Food
 {
     using System;
     using System.Collections.Generic;

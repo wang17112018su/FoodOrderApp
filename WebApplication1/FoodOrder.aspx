@@ -15,16 +15,10 @@
     	<asp:Panel ID="Panel1" runat="server">
 			<asp:Label ID="Label2" runat="server" Text="Food : "></asp:Label>
 			<asp:DropDownList ID="DropDownList1" runat="server">
-				<asp:ListItem>Chicken Rice</asp:ListItem>
-				<asp:ListItem>Chicken Noodle</asp:ListItem>
-				<asp:ListItem>Chicken Chop</asp:ListItem>
 			</asp:DropDownList>
 			<br />
 			<asp:Label ID="Label3" runat="server" Text="Size of Meal"></asp:Label>
-			<asp:RadioButtonList ID="RadioButtonList1" runat="server">
-				<asp:ListItem Value="L">Large</asp:ListItem>
-				<asp:ListItem Value="M">Medium</asp:ListItem>
-				<asp:ListItem Value="S">Small</asp:ListItem>
+			<asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
 			</asp:RadioButtonList>
 			Extra Seasoning<br />
 			<asp:CheckBox ID="CheckBox1" runat="server" Text="Pepper" />

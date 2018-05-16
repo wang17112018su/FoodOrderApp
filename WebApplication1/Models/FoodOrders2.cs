@@ -1,4 +1,5 @@
-namespace WebApplication1.Models
+namespace Food
+
 {
     using System;
     using System.Data.Entity;

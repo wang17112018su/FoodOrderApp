@@ -4,15 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
 using System.Data;
-using WebApplication1.Models;
 
 
 namespace Food
 {
-    
+
     public class BusinessLogic
     {
-        public static void AddOrder(string user,string foodname,string size,string pepper,string chilli, string ketchup, string tartar)
+        public static void AddOrder(string user, string foodname, string size, string pepper, string chilli, string ketchup, string tartar)
         {
             FoodOrders2 entities = new FoodOrders2();
             FoodListTable order = new FoodListTable();
@@ -25,6 +24,18 @@ namespace Food
             order.Tartar = tartar;
             entities.FoodListTables.Add(order);
             entities.SaveChanges();
+        }
+        public static List<Size> ListSize()
+        {
+            FoodOrders2 entities = new FoodOrders2();
+            return entities.Sizes.ToList<Size>();
+
+        }
+        public static List<Food> ListFood()
+        {
+            FoodOrders2 entities = new FoodOrders2();
+            return entities.Foods.ToList<Food>();
+
         }
     }
 }
